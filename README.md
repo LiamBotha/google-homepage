@@ -1,0 +1,1 @@
+This is a simple project to gain an understanding of browser tools and css for the odin project by examining the google homepage
