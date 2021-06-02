@@ -8,44 +8,187 @@
 </head>
 <body>
     <form id="search-nav">
-        <img scr="googlelogo_color_92x30dp.png" id="google-logo" width="92" height="30">
+        <img src="googlelogo_color_92x30dp.png" id="google-logo" width="92" height="30">
         <div id="search-div">
-            <input id=search-bar>
+            <input id=search-bar value="build this webpage">
         </div>
         <ul id="search-type-links">
-            <li><a>All</a></li>
-            <li><a>News</a></li>
-            <li><a>Videos</a></li>
-            <li><a>Maps</a></li>
-            <li><a>Shopping</a></li>
-            <li><a>More</a></li>
+            <li>
+                <span>
+                    <svg focusable="false" viewBox="0 0 24 24">
+                        <path fill="#34a853" d="M10 2v2a6 6 0 0 1 6 6h2a8 8 0 0 0-8-8"></path>
+                        <path fill="#ea4335" d="M10 4V2a8 8 0 0 0-8 8h2c0-3.3 2.7-6 6-6"></path>
+                        <path fill="#fbbc04" d="M4 10H2a8 8 0 0 0 8 8v-2c-3.3 0-6-2.69-6-6"></path>
+                        <path fill="#4285f4" d="M22 20.59l-5.69-5.69A7.96 7.96 0 0 0 18 10h-2a6 6 0 0 1-6 6v2c1.85 0 3.52-.64 4.88-1.68l5.69 5.69L22 20.59"></path>
+                    </svg>
+                </span>
+                <a>All</a>
+                <div id="link-underline"></div>
+            </li>
+            <li>
+                <span>
+                    <svg focusable="false" viewBox="0 0 24 24"><path d="M12 11h6v2h-6v-2zm-6 6h12v-2H6v2zm0-4h4V7H6v6zm16-7.22v12.44c0 1.54-1.34 2.78-3 2.78H5c-1.64 0-3-1.25-3-2.78V5.78C2 4.26 3.36 3 5 3h14c1.64 0 3 1.25 3 2.78zM19.99 12V5.78c0-.42-.46-.78-1-.78H5c-.54 0-1 .36-1 .78v12.44c0 .42.46.78 1 .78h14c.54 0 1-.36 1-.78V12zM12 9h6V7h-6v2"></path></svg>
+                </span>
+                <a>News</a>
+            </li>
+            <li>
+                <span>
+                    <svg focusable="false" viewBox="0 0 24 24"><path d="M10 16.5l6-4.5-6-4.5v9zM5 20h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1zm14.5 2H5a3 3 0 0 1-3-3V4.4A2.4 2.4 0 0 1 4.4 2h15.2A2.4 2.4 0 0 1 22 4.4v15.1a2.5 2.5 0 0 1-2.5 2.5"></path></svg>
+                </span>
+                <a>Videos</a>
+            </li>
+            <li>
+                <span>
+                    <svg focusable="false" viewBox="0 0 16 16"><path d="M7.503 0c3.09 0 5.502 2.487 5.502 5.427 0 2.337-1.13 3.694-2.26 5.05-.454.528-.906 1.13-1.358 1.734-.452.603-.754 1.508-.98 1.96-.226.452-.377.829-.904.829-.528 0-.678-.377-.905-.83-.226-.451-.527-1.356-.98-1.959-.452-.603-.904-1.206-1.356-1.734C3.132 9.121 2 7.764 2 5.427 2 2.487 4.412 0 7.503 0zm0 1.364c-2.283 0-4.14 1.822-4.14 4.063 0 1.843.86 2.873 1.946 4.177.468.547.942 1.178 1.4 1.79.34.452.596.99.794 1.444.198-.455.453-.992.793-1.445.459-.61.931-1.242 1.413-1.803 1.074-1.29 1.933-2.32 1.933-4.163 0-2.24-1.858-4.063-4.139-4.063zm0 2.734a1.33 1.33 0 11-.001 2.658 1.33 1.33 0 010-2.658"></path></svg>
+                </span>
+                <a>Maps</a>
+            </li>
+            <li>
+                <span>
+                    <svg focusable="false" viewBox="0 0 24 24"><path d="M21.11 2.89A3.02 3.02 0 0 0 18.95 2h-5.8c-.81 0-1.58.31-2.16.89L7.25 6.63 2.9 10.98a3.06 3.06 0 0 0 0 4.32l5.79 5.8a3.05 3.05 0 0 0 4.32.01l8.09-8.1c.58-.58.9-1.34.9-2.16v-5.8c0-.81-.32-1.59-.89-2.16zM20 10.85c0 .28-.12.54-.32.74l-3.73 3.74-4.36 4.36c-.41.41-1.08.41-1.49 0l-2.89-2.9-2.9-2.9a1.06 1.06 0 0 1 0-1.49l8.1-8.1c.2-.2.46-.3.74-.3l5.8-.01A1.05 1.05 0 0 1 20 5.05v5.8zM16 6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2"></path></svg>
+                </span>
+                <a>Shopping</a>
+            </li>
+            <li>
+                <span>
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+                </span>
+                <a>More</a>
+            </li>
         </ul>
     </form>
 
     <div id="search-page">
+        <p id="result-amount">About 152 000 000 results (0,55 seconds)</p>
         <ul id="result-list">
             <li>
-                <a class="result-title">Test 1<a>
+                <p>https://victor-lf.github.io › google-search-results</p>
+                <a href="#1" class="result-title">build this webpage - GitHub Pages</a>
+                <div class="result-description">
+                    ... results (0.24 seconds). Image result for build this webpage ... With zero coding experience,
+                    artist building 180 webpages in 180 days. https://arstechnica.com/.
+                </div>
+            </li>
+            <li>
+                <p>https://christine-27.github.io › google-homepage</p>
+                <a href="#2" class="result-title">build this webpage - GitHub Pages</a>
                 <div class="result-description">
                     With zero coding experience, artist building 180 webpages in 180 days.
                     https://arstechnica.com/. Learning to Code By Building A Website a Day - Jennifer Dewalt.
                 </div>
             </li>
             <li>
-                <a class="result-title">Test 2<a>
+                <p>https://www.websitebuilderexpert.com › building-websi...</p>
+                <a href="#3" class="result-title">How to Build a Website 2021 | A Step by Step Beginner's Guide</a>
                 <div class="result-description">
-                    With zero coding experience, artist building 180 webpages in 180 days.
-                    https://arstechnica.com/. Learning to Code By Building A Website a Day - Jennifer Dewalt.
+                    16 Apr 2021 — Anyone can build a website with the right tools - and the right guide! We'll show
+                    you how to make yours in just 9 steps.
                 </div>
             </li>
             <li>
-                <a class="result-title">Test 3<a>
+                <p>https://websitesetup.org</p>
+                <a href="#3" class="result-title">How to Create a Website (A Guide for Beginners) | WSU</a>
                 <div class="result-description">
-                    With zero coding experience, artist building 180 webpages in 180 days.
-                    https://arstechnica.com/. Learning to Code By Building A Website a Day - Jennifer Dewalt.
+                    Step 1. Choose a website building platform — To put it simply, a CMS (or website building platform)
+                    is a user-friendly platform for building websites ...
+                </div>
+            </li>
+            <li>
+                <p>https://makeawebsitehub.com</p>
+                <a href="#3" class="result-title">Make a Website in Just 1 Hour With This Easy Guide - 2021</a>
+                <div class="result-description">
+                    This site teaches you how to make a website in just 3 easy to follow steps.
+                    There's also lots of really useful resources to help you build traffic in 2021.
+                </div>
+            </li>
+            <li>
+                <p>https://www.pcmag.com › ... › Web Hosting</p>
+                <a href="#3" class="result-title">How to Create a Website | PCMag</a>
+                <div class="result-description">
+                    You can use an online service to create web pages, or build it offline using a desktop software tool.
+                    Or, if you're a coding dynamo, use a plain text editor to create a ...
+                </div>
+            </li>
+            <li>
+                <p>https://www.webhostingsecretrevealed.net › blog › mak...</p>
+                <a href="#3" class="result-title">How to Create a Website: Step-by-Step Tutorial</a>
+                <div class="result-description">
+                    Creating from scratch — To design and create webpages, you can either hire a web developer or do
+                    ... Method #1: Creating a website from scratch.
+                </div>
+            </li>
+            <li>
+                <p>https://www.squarespace.com</p>
+                <a href="#3" class="result-title">Squarespace: Build a Website – Website Builder</a>
+                <div class="result-description">
+                    Squarespace is the all-in-one solution for anyone looking to create a beautiful website.
+                    Domains, eCommerce, hosting, galleries, analytics, and 24/7 support all ...
+                </div>
+            </li>
+            <li>
+                <p>https://www.google.com › business › website-builder</p>
+                <a href="#3" class="result-title">Free Website Builder For Your Business - Google My Business</a>
+                <div class="result-description">
+                    Let Google build your first website for free. We'll help you create a beautiful website to impress and engage new customers
+                    – and establish your business online.alleries, analytics, and 24/7 support all ...
+                </div>
+            </li>
+            <li>
+                <p>https://www.weebly.com › ...</p>
+                <a href="#3" class="result-title">Free Website Builder: Build a Free Website or Online Store ...</a>
+                <div class="result-description">
+                    Weebly's free website builder makes it easy to create a website, blog, or online store.
+                    Find customizable templates, domains, and easy-to-use tools for any type ...
                 </div>
             </li>
         </ul>
+        <h2>Related searches</h2>
+        <div id="related-searches">
+            <div class="related-item">
+                <img width="40" height="40">
+                <p>Best website builder</p>
+            </div>
+            <div class="related-item">
+                <img width="40" height="40">
+                <p>Website building software</p>
+            </div>
+            <div class="related-item">
+                <img width="40" height="40">
+                <p>Website builder</p>
+            </div>
+            <div class="related-item">
+                <img width="40" height="40">
+                <p>Software for web development</p>
+            </div>
+        </div>
+        <div id="search-tags">
+            <div id="left-tags" class="tag-group">
+                <a class="tagged-search"><span></span><b>how to make a website on google for free</b></a>
+                <a class="tagged-search"><span></span><b>creating a website for your business</b></a>
+                <a class="tagged-search"><span></span><b>how to build a website from scratch</b></a>
+                <a class="tagged-search"><span></span><b>create new website account</b></a>
+            </div>
+            <div id="right-tags" class="tag-group">
+                <a class="tagged-search"><span></span><b>how to build a website from scratch</b></a>
+                <a class="tagged-search"><span></span><b>how to create a website using html</b></a>
+                <a class="tagged-search"><span></span><b>google website</b></a>
+            </div>
+        </div>
+        <div id="pages">
+            <span></span>
+            <a href="#1"><span></span><p>1</p></a>
+            <a href="#2"><span></span><p>2</p></a>
+            <a href="#3"><span></span><p>3</p></a>
+            <a href="#4"><span></span><p>4</p></a>
+            <a href="#5"><span></span><p>5</p></a>
+            <a href="#6"><span></span><p>6</p></a>
+            <a href="#7"><span></span><p>7</p></a>
+            <a href="#8"><span></span><p>8</p></a>
+            <a href="#9"><span></span><p>9</p></a>
+            <a href="#10"><span></span><p>10</p></a>
+            <span></span>
+            <a>Next</a>
+        </div>
     </div>
 </body>
 </html>

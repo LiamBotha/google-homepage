@@ -7,22 +7,22 @@ body {
 
 #google-logo {
     position: absolute;
-    left: 25px;
-    top: 30px;
+    left: 24px;
+    top: 36px;
 }
 
 #search-nav {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #ebebeb;
     padding: 1.6rem 1rem 0 1rem;
 }
 
 #search-div {
     margin: 0 auto;
-    margin-left: 145px;
+    margin-left: 144px;
     display:flex;
-    width: 42rem;
+    width: 41rem;
     height: 2.9rem;
-    padding: 0 6px 0 14px;
+    padding: 0 6px 0 18px;
     background-color: white;
     border-radius: 24px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -32,17 +32,174 @@ body {
     flex: 80%;
     border: none;
     background: transparent;
+    font-size: 1rem;
+    font-family: arial, sans-serif;
 }
 
 #search-type-links {
     text-decoration: none;
     list-style-type: none;
-    margin-left: 145px;
-    margin-top: 2rem;
+    margin: 1.8rem 0 0 124px;
 }
 
 #search-type-links > li {
     display: inline-block;
-    padding-right: 1.2rem;
-    font-size: 0.9rem;
+    padding-right: 1.19rem;
+    font-size: 0.87rem;
+    color: #5f6368;
+    fill: #5f6368;
+    text-align: center;
+}
+
+#search-type-links > li > span {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-right: 0.1rem;
+}
+
+#search-type-links > li:first-child {
+    color: #1a73e8;
+}
+
+#link-underline {
+    background: #1a73e8;
+    height: 3px;
+    margin-top: 11px;
+}
+
+/* Main Section*/
+
+#search-page {
+    color: #5f6368;
+    margin-left : 180px;
+}
+
+#result-amount {
+    margin-bottom: 1.4rem;
+}
+
+#result-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#result-list > li {
+    margin: 0 0 2rem 0;
+    width: 40rem;
+}
+
+#result-list > li > p {
+    margin: 0 0 0.5rem 0;
+}
+
+.result-title {
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.result-title:hover {
+    text-decoration: underline;
+}
+
+.result-description {
+    margin-top: 0.3rem;
+    line-height: 1.6;
+}
+
+.related-item {
+    display: flex;
+    width: 40.75rem;
+    height: 3.5rem;
+    border-top: 1px solid #ecedef;
+    border-bottom: 1px solid #ecedef;
+    align-items: center;
+}
+
+.related-item > img {
+    margin-right: 1rem;
+}
+
+#search-tags {
+    display:flex;
+    width: 40.75rem;
+}
+
+.tag-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.1rem;
+}
+
+.tagged-search {
+    height: 48px;
+    width: 284px;
+    background: #f1f3f4;
+    border-radius: 100px;
+    font-size: 1rem;
+    color: #202124;
+    padding: 0 1.065rem;
+    margin: 0.25rem 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.tagged-search > span {
+    display: block;
+    padding: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='rgba(0,0,0,.54)' d='M20.49 19l-5.73-5.73C15.53 12.2 16 10.91 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.41 0 2.7-.47 3.77-1.24L19 20.49 20.49 19zM5 9.5C5 7.01 7.01 5 9.5 5S14 7.01 14 9.5 11.99 14 9.5 14 5 11.99 5 9.5z'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+.tagged-search > b {
+    display: block;
+    max-width: 227px;
+    margin-left: 1rem;
+    text-align: center;
+}
+
+#pages {
+    margin: 30px 0 30px; 
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    width: 40.75rem;
+}
+
+#pages > a > span {
+    background: url("../googlelogo_color_92x30dp.png") no-repeat;
+    background-position: -47px 0;
+    background-size: 110px;
+    width: 20px;
+    height: 40px;
+    display: block;
+}
+
+#pages > a > p{
+    margin: 0;
+}
+
+#pages > span:first-child {
+    background: url("../googlelogo_color_92x30dp.png") no-repeat;
+    background-position: 0px 0;
+    background-size: 110px;
+    width: 28px;
+    height: 40px;
+    display: block;
+    
+}
+
+#pages > span:last-of-type {
+    background: url("../googlelogo_color_92x30dp.png") no-repeat;
+    background-position: -66px 0;
+    background-size: 110px;
+    width: 44px;
+    height: 40px;
+    display: block;
 }
