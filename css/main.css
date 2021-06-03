@@ -159,7 +159,7 @@ body {
     display: block;
     max-width: 227px;
     margin-left: 1rem;
-    text-align: center;
+    text-align: left;
 }
 
 #pages {
@@ -185,6 +185,11 @@ body {
     margin: 0;
 }
 
+#pages > a {
+    text-decoration-line: none;
+    color: #4285f4;
+}
+
 #pages > span:first-child {
     background: url("../googlelogo_color_92x30dp.png") no-repeat;
     background-position: 0px 0;
@@ -195,11 +200,18 @@ body {
     
 }
 
-#pages > span:last-of-type {
-    background: url("../googlelogo_color_92x30dp.png") no-repeat;
-    background-position: -66px 0;
-    background-size: 110px;
-    width: 44px;
-    height: 40px;
+#pages > a:first-of-type > span {
+    background-position: -28px 0;
+}
+
+#pages > a:last-of-type > span {
+    background: url("../nav_logo323.webp") no-repeat;
+    background-position: -92px 0;
+    background-size: 160px;
+    width: 80px;
     display: block;
+}
+
+#pages > a:last-of-type {
+    text-align: end;
 }
