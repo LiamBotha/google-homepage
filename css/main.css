@@ -281,3 +281,30 @@ body {
 #pages > a:last-of-type {
     text-align: end;
 }
+
+/* Footer */
+
+#footer {
+    background-color: #f2f2f2;
+    height: calc(106px - 24px);
+    padding: 12px 0;
+}
+
+#footer-top {
+    font-size: 0.95rem;
+    border-bottom: 1px solid #dadce0;
+    padding-left: 180px;
+    line-height: 40px;
+    color: rgba(0,0,0,.54);
+}
+
+#footer-bot {
+    font-size: 0.86rem;
+    padding-left: 180px;
+    color: rgba(0,0,0,.54);
+    display : flex;
+}
+
+#footer-bot > p {
+    margin-right: 1.8rem;
+}
